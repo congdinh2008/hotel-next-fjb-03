@@ -12,9 +12,11 @@ export default function ManagerLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <div className="main-content flex-grow h-screen flex">
+    <div className="flex-grow h-screen flex">
       <Sidebar />
-      {children}
+      <div className="main-content w-full p-4">
+        {children}
+      </div>
     </div>
   );
 }
